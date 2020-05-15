@@ -193,7 +193,7 @@ def question7_2a(reponse):
     a = sp.Matrix([[4, -1, 4], [6, 2, -5], [-3, 3, 1]])
     
     if np.abs(reponse - sp.det(a)) != 0:
-        display("Dans ce cas, ce matrice est la transposée de A. Les déterminants sont égaux.")
+        display("Dans ce cas, cette matrice est la transposée de A. Les déterminants sont égaux.")
         Determinant_3x3(a, step_by_step = True)
     else:
         display("Bravo! Vous avez trouvé la réponse")
@@ -238,7 +238,7 @@ def question7_2e(reponse):
     
     if np.abs(reponse - sp.det(e)) != 0:
         display("Dans ce cas, deux fois la première rangée a été ajouté à la troisième rangée.")
-        display("Aussi les premières deux rangées sont échangeés.")
+        display("Aussi les premières deux rangées sont échangées.")
         display(Latex("$ Soit: 2 \\times R_1 + R_3 \\rightarrow R_3, R_1 \\leftrightarrow R_2 $"))
         display("Le déterminant est donc:")
         display(Latex("$ det|e| = (-1) \cdot det|A| = (-1) \cdot 155 = - 155 $"))
@@ -251,7 +251,7 @@ def question7_2f(reponse):
     
     if np.abs(reponse - sp.det(f)) != 0:
         display("Dans ce cas, la deuxième rangée a été multiplié par cinq.")
-        display("Après ça, c''est la transposée de la matrice .")
+        display("Après ça, c''est la transposée de la matrice.")
         display(Latex("$ Soit: 5 \\times R_2 \\rightarrow R_2, \: et \: transposée $"))
         display("Le déterminant est donc:")
         display(Latex("$ det|f| = 5 \cdot det|A|^T = 5 \cdot det|A| = 5 \cdot 155 = 755 $"))
