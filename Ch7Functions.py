@@ -173,8 +173,8 @@ def Sarrus_3x3(A):
     
     display(Latex('$' + detA_s + ' = ' + x1 + "+" + x2 + "+" + x3 + "-" + y1 + "-" + y2 + "-" + y3 + '$'  ))
     display(Latex('$' + detA_s + ' = ' + sp.latex(sp.simplify(prod1)) + " + " + sp.latex(sp.simplify(prod2)) + " + " \
-                  + sp.latex(sp.simplify(prod3)) + " - " + sp.latex(sp.simplify(prod4)) + " - "\
-                  + sp.latex(sp.simplify(prod5)) + " - " + sp.latex(sp.simplify(prod6)) + '$'))
+                  + sp.latex(sp.simplify(prod3)) + " - [(" + sp.latex(sp.simplify(prod4)) + ") + ("\
+                  + sp.latex(sp.simplify(prod5)) + ") + (" + sp.latex(sp.simplify(prod6)) + ')] $'))
     display(Latex('$' + detA_s + ' = ' + sp.latex(sp.simplify(prod1+prod2+prod3)) + ' - ' + sp.latex(sp.simplify(prod4+prod5+prod6)) + '$'))
     
     display(Latex('$' + detA_s + ' = ' + sp.latex(sp.simplify(sp.det(A))) + '$'))
